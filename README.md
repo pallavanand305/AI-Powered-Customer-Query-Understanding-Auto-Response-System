@@ -1,1 +1,449 @@
-# 🚀 AI-Powered Customer Query Understanding & Auto-Response System\n\n[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)\n[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)\n[![MLflow](https://img.shields.io/badge/MLflow-2.8+-orange.svg)](https://mlflow.org)\n[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)\n[![AWS](https://img.shields.io/badge/AWS-Compatible-yellow.svg)](https://aws.amazon.com)\n\nA **production-ready** AI/ML system demonstrating advanced full-stack development with comprehensive MLOps, DevOps, AWS integration, NLP, and LLM capabilities designed for **4+ years experienced AI/ML engineers**.\n\n## 🎯 **Advanced Features for Senior Engineers**\n\n### **🧠 AI/ML Capabilities**\n- **Ensemble Learning**: Multi-model voting classifier with transformer ensembles\n- **Uncertainty Quantification**: Monte Carlo dropout for prediction confidence\n- **Model Drift Detection**: Statistical drift monitoring with automated alerts\n- **Advanced NLP**: Multi-transformer architecture (DistilBERT + RoBERTa)\n- **LLM Integration**: Contextual response generation with customer history\n- **Priority Prediction**: Multi-factor scoring with escalation logic\n- **Feature Engineering**: Advanced text feature extraction pipeline\n\n### **🔧 MLOps & Monitoring**\n- **MLflow Integration**: Complete experiment tracking and model registry\n- **Prometheus Metrics**: Custom metrics for model performance monitoring\n- **Drift Detection**: Real-time model degradation detection\n- **A/B Testing Ready**: Model versioning and comparison framework\n- **Performance Analytics**: Comprehensive model health dashboards\n- **Automated Retraining**: Trigger-based model updates\n\n### **☁️ Production Architecture**\n- **Microservices Design**: Modular, scalable service architecture\n- **Async Processing**: FastAPI with async/await for high concurrency\n- **Background Tasks**: Non-blocking model training and data processing\n- **Health Monitoring**: Multi-level health checks (API, Model, System)\n- **Load Balancing Ready**: Horizontal scaling support\n- **Circuit Breakers**: Fault tolerance and graceful degradation\n\n## 📊 **System Architecture**\n\n```\n┌─────────────────────────────────────────────────────────────────┐\n│                    Production Architecture                       │\n├─────────────────────────────────────────────────────────────────┤\n│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │\n│  │   Load      │    │   FastAPI   │    │   ML        │        │\n│  │   Balancer  │───▶│   Gateway   │───▶│   Pipeline  │        │\n│  └─────────────┘    └─────────────┘    └─────────────┘        │\n│                            │                    │               │\n│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │\n│  │ Prometheus  │    │  Database   │    │   MLflow    │        │\n│  │ Monitoring  │    │  (SQLite/   │    │  Tracking   │        │\n│  │             │    │  PostgreSQL)│    │             │        │\n│  └─────────────┘    └─────────────┘    └─────────────┘        │\n│                                                                 │\n│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │\n│  │   Redis     │    │   AWS       │    │   Docker    │        │\n│  │   Cache     │    │   Services  │    │   Swarm     │        │\n│  └─────────────┘    └─────────────┘    └─────────────┘        │\n└─────────────────────────────────────────────────────────────────┘\n```\n\n## 🛠 **Advanced Tech Stack**\n\n### **Core Framework**\n- **FastAPI**: High-performance async web framework\n- **Pydantic**: Advanced data validation and serialization\n- **SQLAlchemy**: ORM with async support\n- **Redis**: Caching and session management\n\n### **AI/ML Stack**\n- **Transformers**: Hugging Face transformer models\n- **PyTorch**: Deep learning framework\n- **Scikit-learn**: Traditional ML algorithms\n- **XGBoost/LightGBM**: Gradient boosting frameworks\n- **Evidently**: ML monitoring and drift detection\n\n### **MLOps & DevOps**\n- **MLflow**: Experiment tracking and model registry\n- **Weights & Biases**: Advanced experiment management\n- **Prometheus**: Metrics collection and monitoring\n- **Docker**: Containerization and orchestration\n- **GitHub Actions**: CI/CD pipeline automation\n\n### **Cloud & Infrastructure**\n- **AWS Lambda**: Serverless compute\n- **DynamoDB**: NoSQL database\n- **S3**: Model artifact storage\n- **CloudFormation**: Infrastructure as Code\n- **API Gateway**: API management\n\n## 📁 **Project Structure**\n\n```\nAI-Powered-Customer-Query-Understanding-Auto-Response-System/\n├── 📁 app/                          # Main application\n│   ├── 📄 main.py                   # FastAPI application with advanced features\n│   ├── 📄 ml_pipeline.py            # ML training pipeline with MLflow\n│   ├── 📁 models/                   # ML model implementations\n│   │   ├── 📄 __init__.py\n│   │   └── 📄 ensemble_model.py     # Advanced ensemble classifier\n│   ├── 📁 services/                 # Business logic services\n│   │   └── 📄 llm_service.py        # LLM response generation\n│   └── 📁 utils/                    # Utility functions\n│       └── 📄 monitoring.py         # Comprehensive monitoring\n├── 📁 aws/                          # AWS deployment\n│   ├── 📄 lambda_function.py        # Serverless function\n│   └── 📄 cloudformation.yml        # Infrastructure template\n├── 📁 config/                       # Configuration management\n│   └── 📄 config.py                 # Settings and hyperparameters\n├── 📁 data/                         # Data storage\n├── 📁 notebooks/                    # Jupyter analysis notebooks\n│   └── 📄 model_analysis.ipynb      # Model performance analysis\n├── 📁 scripts/                      # Utility scripts\n│   └── 📄 test_system.py            # Comprehensive testing suite\n├── 📁 tests/                        # Unit and integration tests\n│   └── 📄 test_api.py               # API endpoint tests\n├── 📁 .github/workflows/            # CI/CD pipelines\n│   └── 📄 ci-cd.yml                 # GitHub Actions workflow\n├── 📄 docker-compose.yml            # Multi-service deployment\n├── 📄 Dockerfile                    # Container configuration\n├── 📄 requirements.txt              # Python dependencies\n├── 📄 prometheus.yml                # Monitoring configuration\n├── 📄 .env.example                  # Environment variables template\n├── 📄 run.py                        # Main execution script\n└── 📄 README.md                     # This file\n```\n\n## 🚀 **Quick Start Guide**\n\n### **Prerequisites**\n- Python 3.9+\n- Docker & Docker Compose\n- Git\n- AWS CLI (for cloud deployment)\n\n### **1. Local Development Setup**\n\n```bash\n# Clone the repository\ngit clone <repository-url>\ncd AI-Powered-Customer-Query-Understanding-Auto-Response-System\n\n# Create virtual environment\npython -m venv venv\nsource venv/bin/activate  # On Windows: venv\\Scripts\\activate\n\n# Install dependencies\npip install -r requirements.txt\n\n# Set up environment variables\ncp .env.example .env\n# Edit .env with your configuration\n\n# Initialize database and train models\npython run.py install\npython run.py train\n\n# Start the development server\npython run.py start\n```\n\n### **2. Docker Deployment**\n\n```bash\n# Run complete stack with monitoring\ndocker-compose up --build\n\n# Access services:\n# API: http://localhost:8000\n# MLflow: http://localhost:5000\n# Prometheus: http://localhost:9090\n```\n\n### **3. Production Testing**\n\n```bash\n# Run comprehensive test suite\npython scripts/test_system.py\n\n# Run specific tests\npytest tests/ -v --cov=app\n\n# Performance testing\npython scripts/test_system.py --load-test --concurrent=50\n```\n\n## 🔗 **API Endpoints**\n\n### **Core Endpoints**\n- `POST /analyze-query` - Advanced query analysis with LLM response\n- `GET /health` - Comprehensive health check with model status\n- `GET /metrics` - Detailed system and model metrics\n- `GET /prometheus-metrics` - Prometheus-compatible metrics\n\n### **Advanced Endpoints**\n- `GET /model-drift` - Model drift detection status\n- `POST /retrain-trigger` - Trigger model retraining\n- `GET /customer-analytics/{customer_id}` - Customer-specific analytics\n- `GET /docs` - Interactive API documentation\n\n### **Example Advanced Usage**\n\n```bash\n# Analyze customer query with full context\ncurl -X POST \"http://localhost:8000/analyze-query\" \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\n       \"query\": \"My premium account billing seems incorrect this month\",\n       \"customer_id\": \"CUST_12345\",\n       \"channel\": \"web_chat\",\n       \"session_id\": \"sess_abc123\",\n       \"customer_tier\": \"premium\"\n     }'\n\n# Response includes:\n# - Intent classification with confidence\n# - Sentiment analysis\n# - Priority scoring\n# - Contextual LLM response\n# - Suggested actions\n# - Escalation recommendations\n# - Uncertainty quantification\n```\n\n## 📊 **Monitoring & Analytics**\n\n### **Model Performance Monitoring**\n- Real-time confidence score tracking\n- Intent classification accuracy metrics\n- Response time performance\n- Model drift detection alerts\n- A/B testing framework\n\n### **System Health Monitoring**\n- API endpoint performance\n- Resource utilization (CPU, Memory, Disk)\n- Error rate tracking\n- Custom business metrics\n\n### **MLflow Integration**\n```bash\n# Access MLflow UI\nopen http://localhost:5000\n\n# Track experiments programmatically\nmlflow experiments list\nmlflow runs list --experiment-id 1\n```\n\n## ☁️ **AWS Deployment**\n\n### **Infrastructure Deployment**\n```bash\n# Deploy AWS infrastructure\naws cloudformation deploy \\\n  --template-file aws/cloudformation.yml \\\n  --stack-name customer-query-system \\\n  --capabilities CAPABILITY_IAM\n\n# Deploy Lambda function\nzip -r lambda.zip aws/lambda_function.py\naws lambda update-function-code \\\n  --function-name query-processor \\\n  --zip-file fileb://lambda.zip\n```\n\n### **Production Configuration**\n- Auto-scaling Lambda functions\n- DynamoDB with on-demand billing\n- S3 for model artifact storage\n- CloudWatch for monitoring\n- API Gateway with rate limiting\n\n## 🧪 **Testing Strategy**\n\n### **Test Coverage**\n- **Unit Tests**: Individual component testing\n- **Integration Tests**: End-to-end API testing\n- **Load Tests**: Performance under concurrent load\n- **Model Tests**: ML model accuracy and drift detection\n- **Security Tests**: Input validation and sanitization\n\n### **Continuous Testing**\n```bash\n# Run all tests with coverage\npytest tests/ --cov=app --cov-report=html\n\n# Run performance benchmarks\npython scripts/test_system.py --benchmark\n\n# Model validation tests\npython -m pytest tests/test_models.py -v\n```\n\n## 📈 **Performance Benchmarks**\n\n### **Expected Performance (Local)**\n- **Response Time**: < 200ms (95th percentile)\n- **Throughput**: 1000+ requests/second\n- **Model Accuracy**: > 85% intent classification\n- **Availability**: 99.9% uptime\n\n### **Scalability Targets**\n- **Horizontal Scaling**: 10+ replicas\n- **Concurrent Users**: 10,000+\n- **Daily Queries**: 1M+\n- **Model Updates**: Real-time deployment\n\n## 🔒 **Security Features**\n\n- Input validation and sanitization\n- Rate limiting and DDoS protection\n- API key authentication\n- Data encryption at rest and in transit\n- PII detection and masking\n- Audit logging\n\n## 🚀 **Advanced Features for Senior Engineers**\n\n### **1. Model Ensemble Architecture**\n```python\n# Multi-model ensemble with uncertainty quantification\nensemble = TransformerEnsemble([\n    \"distilbert-base-uncased\",\n    \"roberta-base\"\n])\n\n# Monte Carlo dropout for uncertainty estimation\nuncertainty_score = model.predict_with_uncertainty(query)\n```\n\n### **2. Real-time Drift Detection**\n```python\n# Statistical drift monitoring\ndrift_detector = ModelMonitor()\ndrift_status = drift_detector.detect_drift()\n\nif drift_status['drift_detected']:\n    trigger_retraining()\n```\n\n### **3. Advanced Feature Engineering**\n```python\n# Comprehensive text feature extraction\nfeatures = {\n    'semantic_embeddings': get_transformer_embeddings(text),\n    'linguistic_features': extract_linguistic_features(text),\n    'behavioral_features': get_customer_behavior_features(customer_id),\n    'contextual_features': build_conversation_context(session_id)\n}\n```\n\n## 📚 **Documentation**\n\n- **API Documentation**: http://localhost:8000/docs\n- **Model Documentation**: `notebooks/model_analysis.ipynb`\n- **Architecture Guide**: `docs/architecture.md`\n- **Deployment Guide**: `docs/deployment.md`\n\n## 🤝 **Contributing**\n\n1. Fork the repository\n2. Create feature branch (`git checkout -b feature/amazing-feature`)\n3. Commit changes (`git commit -m 'Add amazing feature'`)\n4. Push to branch (`git push origin feature/amazing-feature`)\n5. Open Pull Request\n\n## 📄 **License**\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n## 🎯 **Key Capabilities Demonstrated**\n\n### **For 4+ Year AI/ML Engineers:**\n\n1. **Advanced ML Engineering**\n   - Multi-model ensemble architectures\n   - Uncertainty quantification techniques\n   - Real-time model monitoring and drift detection\n   - Automated model retraining pipelines\n\n2. **Production MLOps**\n   - Complete experiment tracking with MLflow\n   - Model versioning and A/B testing framework\n   - Comprehensive monitoring and alerting\n   - Automated CI/CD for ML models\n\n3. **Scalable Architecture**\n   - Microservices design patterns\n   - Async processing for high concurrency\n   - Cloud-native deployment strategies\n   - Performance optimization techniques\n\n4. **Enterprise Features**\n   - Multi-tenant architecture support\n   - Advanced security implementations\n   - Comprehensive audit logging\n   - Business intelligence integration\n\n---\n\n**Built with ❤️ for Senior AI/ML Engineers**\n\n*This project demonstrates production-ready AI/ML system development with enterprise-grade features, comprehensive monitoring, and scalable architecture suitable for senior engineering roles.*
+<div align="center">
+
+# 🚀 AI-Powered Customer Query Understanding & Auto-Response System
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
+[![MLflow](https://img.shields.io/badge/MLflow-2.8+-orange.svg)](https://mlflow.org)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://docker.com)
+[![AWS](https://img.shields.io/badge/AWS-Compatible-yellow.svg)](https://aws.amazon.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System.svg)](https://github.com/pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System.svg)](https://github.com/pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System/network)
+
+**A production-ready AI/ML system demonstrating advanced full-stack development with comprehensive MLOps, DevOps, AWS integration, NLP, and LLM capabilities designed for 4+ years experienced AI/ML engineers.**
+
+[🚀 Quick Start](#-quick-start-guide) • [📖 Documentation](#-documentation) • [🏗️ Architecture](#-system-architecture) • [🔧 Installation](#1-local-development-setup) • [🤝 Contributing](#-contributing)
+
+</div>
+
+## 🎯 Advanced Features for Senior Engineers
+
+### 🧠 AI/ML Capabilities
+- **Ensemble Learning**: Multi-model voting classifier with transformer ensembles
+- **Uncertainty Quantification**: Monte Carlo dropout for prediction confidence
+- **Model Drift Detection**: Statistical drift monitoring with automated alerts
+- **Advanced NLP**: Multi-transformer architecture (DistilBERT + RoBERTa)
+- **LLM Integration**: Contextual response generation with customer history
+- **Priority Prediction**: Multi-factor scoring with escalation logic
+- **Feature Engineering**: Advanced text feature extraction pipeline
+
+### 🔧 MLOps & Monitoring
+- **MLflow Integration**: Complete experiment tracking and model registry
+- **Prometheus Metrics**: Custom metrics for model performance monitoring
+- **Drift Detection**: Real-time model degradation detection
+- **A/B Testing Ready**: Model versioning and comparison framework
+- **Performance Analytics**: Comprehensive model health dashboards
+- **Automated Retraining**: Trigger-based model updates
+
+### ☁️ Production Architecture
+- **Microservices Design**: Modular, scalable service architecture
+- **Async Processing**: FastAPI with async/await for high concurrency
+- **Background Tasks**: Non-blocking model training and data processing
+- **Health Monitoring**: Multi-level health checks (API, Model, System)
+- **Load Balancing Ready**: Horizontal scaling support
+- **Circuit Breakers**: Fault tolerance and graceful degradation
+
+## 📊 System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    Production Architecture                       │
+├─────────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
+│  │   Load      │    │   FastAPI   │    │   ML        │        │
+│  │   Balancer  │───▶│   Gateway   │───▶│   Pipeline  │        │
+│  └─────────────┘    └─────────────┘    └─────────────┘        │
+│                            │                    │               │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
+│  │ Prometheus  │    │  Database   │    │   MLflow    │        │
+│  │ Monitoring  │    │  (SQLite/   │    │  Tracking   │        │
+│  │             │    │  PostgreSQL)│    │             │        │
+│  └─────────────┘    └─────────────┘    └─────────────┘        │
+│                                                                 │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐        │
+│  │   Redis     │    │   AWS       │    │   Docker    │        │
+│  │   Cache     │    │   Services  │    │   Swarm     │        │
+│  └─────────────┘    └─────────────┘    └─────────────┘        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## 🛠 Advanced Tech Stack
+
+### Core Framework
+- **FastAPI**: High-performance async web framework
+- **Pydantic**: Advanced data validation and serialization
+- **SQLAlchemy**: ORM with async support
+- **Redis**: Caching and session management
+
+### AI/ML Stack
+- **Transformers**: Hugging Face transformer models
+- **PyTorch**: Deep learning framework
+- **Scikit-learn**: Traditional ML algorithms
+- **XGBoost/LightGBM**: Gradient boosting frameworks
+- **Evidently**: ML monitoring and drift detection
+
+### MLOps & DevOps
+- **MLflow**: Experiment tracking and model registry
+- **Weights & Biases**: Advanced experiment management
+- **Prometheus**: Metrics collection and monitoring
+- **Docker**: Containerization and orchestration
+- **GitHub Actions**: CI/CD pipeline automation
+
+### Cloud & Infrastructure
+- **AWS Lambda**: Serverless compute
+- **DynamoDB**: NoSQL database
+- **S3**: Model artifact storage
+- **CloudFormation**: Infrastructure as Code
+- **API Gateway**: API management
+
+## 📁 Project Structure
+
+<details>
+<summary>📂 <strong>Click to expand project structure</strong></summary>
+
+```
+AI-Powered-Customer-Query-Understanding-Auto-Response-System/
+├── 📁 .github/                      # GitHub configuration
+│   └── 📁 workflows/
+│       └── 📄 ci-cd.yml             # GitHub Actions CI/CD pipeline
+├── 📁 app/                          # Main application
+│   ├── 📄 main.py                   # FastAPI application with advanced features
+│   ├── 📄 ml_pipeline.py            # ML training pipeline with MLflow
+│   ├── 📁 models/                   # ML model implementations
+│   │   ├── 📄 __init__.py
+│   │   └── 📄 ensemble_model.py     # Advanced ensemble classifier
+│   ├── 📁 services/                 # Business logic services
+│   │   └── 📄 llm_service.py        # LLM response generation
+│   └── 📁 utils/                    # Utility functions
+│       └── 📄 monitoring.py         # Comprehensive monitoring
+├── 📁 aws/                          # AWS deployment
+│   ├── 📄 lambda_function.py        # Serverless function
+│   └── 📄 cloudformation.yml        # Infrastructure template
+├── 📁 config/                       # Configuration management
+│   └── 📄 config.py                 # Settings and hyperparameters
+├── 📁 data/                         # Data storage (gitignored)
+├── 📁 notebooks/                    # Jupyter analysis notebooks
+│   └── 📄 model_analysis.ipynb      # Model performance analysis
+├── 📁 scripts/                      # Utility scripts
+│   └── 📄 test_system.py            # Comprehensive testing suite
+├── 📁 tests/                        # Unit and integration tests
+│   └── 📄 test_api.py               # API endpoint tests
+├── 📄 .env.example                  # Environment variables template
+├── 📄 .gitignore                    # Git ignore rules
+├── 📄 ARCHITECTURE.md               # System architecture documentation
+├── 📄 DEPLOYMENT.md                 # Deployment guide
+├── 📄 docker-compose.yml            # Multi-service deployment
+├── 📄 Dockerfile                    # Container configuration
+├── 📄 GITHUB_SETUP.md               # GitHub setup guide
+├── 📄 LICENSE                       # MIT license
+├── 📄 prometheus.yml                # Monitoring configuration
+├── 📄 PUSH_COMMANDS.md              # Git push commands
+├── 📄 README.md                     # This file
+├── 📄 requirements.txt              # Python dependencies
+├── 📄 run.py                        # Main execution script
+├── 📄 push_to_github.bat            # Windows push script
+└── 📄 push_to_github.sh             # Unix push script
+```
+
+</details>
+
+## 🚀 Quick Start Guide
+
+### Prerequisites
+- **Python 3.9+**
+- **Docker & Docker Compose**
+- **Git**
+- **AWS CLI** (for cloud deployment)
+
+### 1. Local Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System.git
+cd AI-Powered-Customer-Query-Understanding-Auto-Response-System
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Initialize database and train models
+python run.py install
+python run.py train
+
+# Start the development server
+python run.py start
+```
+
+### 2. Docker Deployment
+
+```bash
+# Run complete stack with monitoring
+docker-compose up --build
+
+# Access services:
+# 🌐 API: http://localhost:8000
+# 📊 MLflow: http://localhost:5000
+# 📈 Prometheus: http://localhost:9090
+```
+
+### 3. Production Testing
+
+```bash
+# Run comprehensive test suite
+python scripts/test_system.py
+
+# Run specific tests
+pytest tests/ -v --cov=app
+
+# Performance testing
+python scripts/test_system.py --load-test --concurrent=50
+```
+
+## 🔗 API Endpoints
+
+### Core Endpoints
+- `POST /analyze-query` - Advanced query analysis with LLM response
+- `GET /health` - Comprehensive health check with model status
+- `GET /metrics` - Detailed system and model metrics
+- `GET /prometheus-metrics` - Prometheus-compatible metrics
+
+### Advanced Endpoints
+- `GET /model-drift` - Model drift detection status
+- `POST /retrain-trigger` - Trigger model retraining
+- `GET /customer-analytics/{customer_id}` - Customer-specific analytics
+- `GET /docs` - Interactive API documentation
+
+### Example Usage
+
+```bash
+# Analyze customer query with full context
+curl -X POST "http://localhost:8000/analyze-query" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "query": "My premium account billing seems incorrect this month",
+       "customer_id": "CUST_12345",
+       "channel": "web_chat",
+       "session_id": "sess_abc123",
+       "customer_tier": "premium"
+     }'
+
+# Response includes:
+# - Intent classification with confidence
+# - Sentiment analysis
+# - Priority scoring
+# - Contextual LLM response
+# - Suggested actions
+# - Escalation recommendations
+# - Uncertainty quantification
+```
+
+## 📊 Monitoring & Analytics
+
+### Model Performance Monitoring
+- Real-time confidence score tracking
+- Intent classification accuracy metrics
+- Response time performance
+- Model drift detection alerts
+- A/B testing framework
+
+### System Health Monitoring
+- API endpoint performance
+- Resource utilization (CPU, Memory, Disk)
+- Error rate tracking
+- Custom business metrics
+
+### MLflow Integration
+```bash
+# Access MLflow UI
+open http://localhost:5000
+
+# Track experiments programmatically
+mlflow experiments list
+mlflow runs list --experiment-id 1
+```
+
+## ☁️ AWS Deployment
+
+### Infrastructure Deployment
+```bash
+# Deploy AWS infrastructure
+aws cloudformation deploy \
+  --template-file aws/cloudformation.yml \
+  --stack-name customer-query-system \
+  --capabilities CAPABILITY_IAM
+
+# Deploy Lambda function
+zip -r lambda.zip aws/lambda_function.py
+aws lambda update-function-code \
+  --function-name query-processor \
+  --zip-file fileb://lambda.zip
+```
+
+### Production Configuration
+- Auto-scaling Lambda functions
+- DynamoDB with on-demand billing
+- S3 for model artifact storage
+- CloudWatch for monitoring
+- API Gateway with rate limiting
+
+## 🧪 Testing Strategy
+
+### Test Coverage
+- **Unit Tests**: Individual component testing
+- **Integration Tests**: End-to-end API testing
+- **Load Tests**: Performance under concurrent load
+- **Model Tests**: ML model accuracy and drift detection
+- **Security Tests**: Input validation and sanitization
+
+### Continuous Testing
+```bash
+# Run all tests with coverage
+pytest tests/ --cov=app --cov-report=html
+
+# Run performance benchmarks
+python scripts/test_system.py --benchmark
+
+# Model validation tests
+python -m pytest tests/test_models.py -v
+```
+
+## 📈 Performance Benchmarks
+
+### Expected Performance (Local)
+- **Response Time**: < 200ms (95th percentile)
+- **Throughput**: 1000+ requests/second
+- **Model Accuracy**: > 85% intent classification
+- **Availability**: 99.9% uptime
+
+### Scalability Targets
+- **Horizontal Scaling**: 10+ replicas
+- **Concurrent Users**: 10,000+
+- **Daily Queries**: 1M+
+- **Model Updates**: Real-time deployment
+
+## 🔒 Security Features
+
+- Input validation and sanitization
+- Rate limiting and DDoS protection
+- API key authentication
+- Data encryption at rest and in transit
+- PII detection and masking
+- Audit logging
+
+## 🚀 Advanced Features for Senior Engineers
+
+### 1. Model Ensemble Architecture
+```python
+# Multi-model ensemble with uncertainty quantification
+ensemble = TransformerEnsemble([
+    "distilbert-base-uncased",
+    "roberta-base"
+])
+
+# Monte Carlo dropout for uncertainty estimation
+uncertainty_score = model.predict_with_uncertainty(query)
+```
+
+### 2. Real-time Drift Detection
+```python
+# Statistical drift monitoring
+drift_detector = ModelMonitor()
+drift_status = drift_detector.detect_drift()
+
+if drift_status['drift_detected']:
+    trigger_retraining()
+```
+
+### 3. Advanced Feature Engineering
+```python
+# Comprehensive text feature extraction
+features = {
+    'semantic_embeddings': get_transformer_embeddings(text),
+    'linguistic_features': extract_linguistic_features(text),
+    'behavioral_features': get_customer_behavior_features(customer_id),
+    'contextual_features': build_conversation_context(session_id)
+}
+```
+
+## 📚 Documentation
+
+| Document | Description | Link |
+|----------|-------------|------|
+| 🏗️ **Architecture** | System architecture and design patterns | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| 🚀 **Deployment** | Deployment guide for all environments | [DEPLOYMENT.md](DEPLOYMENT.md) |
+| 🔧 **GitHub Setup** | Repository setup and configuration | [GITHUB_SETUP.md](GITHUB_SETUP.md) |
+| 📊 **API Docs** | Interactive API documentation | http://localhost:8000/docs |
+| 📈 **Model Analysis** | Jupyter notebook for model analysis | [notebooks/model_analysis.ipynb](notebooks/model_analysis.ipynb) |
+| ⚖️ **License** | MIT License details | [LICENSE](LICENSE) |
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🎯 Key Capabilities Demonstrated
+
+### For 4+ Year AI/ML Engineers:
+
+1. **Advanced ML Engineering**
+   - Multi-model ensemble architectures
+   - Uncertainty quantification techniques
+   - Real-time model monitoring and drift detection
+   - Automated model retraining pipelines
+
+2. **Production MLOps**
+   - Complete experiment tracking with MLflow
+   - Model versioning and A/B testing framework
+   - Comprehensive monitoring and alerting
+   - Automated CI/CD for ML models
+
+3. **Scalable Architecture**
+   - Microservices design patterns
+   - Async processing for high concurrency
+   - Cloud-native deployment strategies
+   - Performance optimization techniques
+
+4. **Enterprise Features**
+   - Multi-tenant architecture support
+   - Advanced security implementations
+   - Comprehensive audit logging
+   - Business intelligence integration
+
+---
+
+<div align="center">
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System&type=Date)](https://star-history.com/#pallavanand305/AI-Powered-Customer-Query-Understanding-Auto-Response-System&Date)
+
+## 👨💻 Author
+
+**Pallav Anand**
+- GitHub: [@pallavanand305](https://github.com/pallavanand305)
+- Email: pallavanand305@gmail.com
+
+---
+
+**Built with ❤️ for Senior AI/ML Engineers**
+
+*This project demonstrates production-ready AI/ML system development with enterprise-grade features, comprehensive monitoring, and scalable architecture suitable for senior engineering roles.*
+
+**⭐ Star this repository if you find it helpful!**
+
+</div>

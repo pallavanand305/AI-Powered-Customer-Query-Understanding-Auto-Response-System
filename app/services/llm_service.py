@@ -1,4 +1,3 @@
-import openai
 import asyncio
 from typing import Dict, List, Optional
 import json

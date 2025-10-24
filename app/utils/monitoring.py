@@ -4,7 +4,7 @@ import logging
 from prometheus_client import Counter, Histogram, Gauge, generate_latest
 from functools import wraps
 import mlflow
-from typing import Dict, Any
+from typing import Dict, Any, List
 import json
 from datetime import datetime
 

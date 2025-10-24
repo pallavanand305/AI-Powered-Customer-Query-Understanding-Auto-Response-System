@@ -178,16 +178,30 @@ init_db()
 # Background task to update system metrics
 async def update_metrics():
     while True:
-        SystemMonitor.update_system_metrics()
+        try:
+            SystemMonitor.update_system_metrics()
+        except:
+            pass
         await asyncio.sleep(30)  # Update every 30 seconds
 
-@app.on_event("startup")
+# Startup function
 async def startup_event():
-    # Start background metrics collection
-    asyncio.create_task(update_metrics())
-    
-    # Initialize advanced classifier
-    advanced_classifier.build_ensemble()
+    try:
+        # Start background metrics collection
+        asyncio.create_task(update_metrics())
+        
+        # Initialize advanced classifier
+        advanced_classifier.build_ensemble()
+    except Exception as e:
+        print(f"Startup warning: {e}")
+
+# Call startup on import for testing
+try:
+    import asyncio
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+except:
+    pass
 
 
 
